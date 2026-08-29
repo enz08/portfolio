@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugo — Développeur & designer indépendant</title>
+  <meta name="description" content="Bots Discord, sites web, jeux Roblox et outils IA sur-mesure, conçus et développés par Hugo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logotype">H<span>.</span> — Atelier numérique</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Disponible pour de nouveaux projets</span>
+        <h1 class="serif-xl">Des bots, des jeux et des sites, pensés comme de vrais outils.</h1>
+        <p class="lede">
+          Développeur et designer indépendant, je construis des produits numériques sur-mesure —
+          de l'idée au code, sans intermédiaire.
+        </p>
+        <div class="hero-actions">
+          <a href="projets.html" class="btn btn-primary">Voir les projets</a>
+          <a href="contact.html" class="btn">Discuter d'un projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Sélection</span>
+            <h2 class="serif-lg">Quelques réalisations récentes</h2>
+          </div>
+          <a href="projets.html" class="btn">Tout voir</a>
+        </div>
+        <div class="grid-projects" id="featured-projects"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Compétences</span>
+            <h2 class="serif-lg">Ce que j'utilise pour construire</h2>
+          </div>
+        </div>
+        <div class="skills-cloud">
+          <span class="mono-tag">HTML / CSS / JS</span>
+          <span class="mono-tag">Python</span>
+          <span class="mono-tag">Lua</span>
+          <span class="mono-tag">discord.py</span>
+          <span class="mono-tag">FastAPI</span>
+          <span class="mono-tag">Flask</span>
+          <span class="mono-tag">SQLite</span>
+          <span class="mono-tag">Roblox Studio</span>
+          <span class="mono-tag">GitHub Pages</span>
+          <span class="mono-tag">Design d'interface</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="serif-lg">Un projet en tête ?</h2>
+        <p class="lede">Parlons-en directement sur Discord — je réponds généralement rapidement.</p>
+        <a href="contact.html" class="btn btn-primary">Me contacter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Hugo</span>
+      <span>Site conçu et développé à la main</span>
+    </div>
+  </footer>
+
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    mountProjects("#featured-projects", { featuredOnly: true });
+  </script>
+</body>
+</html>
