@@ -25,7 +25,7 @@ Ouvre `projects-data.js` et ajoute un objet à la fin du tableau `PROJECTS` :
   category: "Site web",         // Site web / Bot Discord / Jeu Roblox / Outil IA...
   status: "En cours",           // "En cours" ou "Terminé"
   summary: "Une ou deux phrases qui expliquent le projet.",
-  stack: ["Techno 1", "Techno 2"],
+  stack: ["Techno 1", "Techno 2"], 
   icon: "telescope",            // telescope | bot | book | controller
   featured: false,              // true = apparaît aussi sur la page d'accueil
   link: "",                     // lien externe si besoin
